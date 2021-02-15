@@ -96,7 +96,7 @@ def results_table(df):
 
 
 def main(df):
-#    logo()
+    logo()
     header()
     df = search_bar(df)
     price_map()
