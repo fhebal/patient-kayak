@@ -17,8 +17,7 @@ with open('logo90.txt', 'r') as f:
 
 
 #st.set_page_config(layout="wide")
-INPUT_PATH = '/home/muody/data/patient_kayak/'
-df = pd.read_csv(INPUT_PATH + "lookup_table.csv")
+df = pd.read_csv("lookup_table.csv")
 
 
 # temporary
@@ -51,7 +50,7 @@ def price_map():
     For now this is a temporary png from Kayak as a placeholder
     """
 
-    image = Image.open(INPUT_PATH + 'kayak_map_demo.png')
+    image = Image.open('kayak_map_demo.png')
     st.image(image)
 
 def results_table():
